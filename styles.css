@@ -90,12 +90,14 @@ nav ul li a {
     font-size: 0.9rem;
     color: #007bff;
     text-decoration: none;
+    margin-bottom: 5px; /* Добавлено для вертикального отступа */
 }
 
 .remember-me {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 10px; /* Увеличен отступ сверху */
+    font-size: 0.8rem; /* Уменьшен размер шрифта */
 }
 
 .remember-me input[type="checkbox"] {
@@ -111,6 +113,7 @@ nav ul li a {
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
+    margin-top: 10px; /* Добавлен отступ сверху */
 }
 
 .or-separator {
@@ -121,18 +124,7 @@ nav ul li a {
 .or-separator span {
     position: relative;
     padding: 0 10px;
-    background-color: #fff;
-}
-
-.or-separator span::before,
-.or-separator span::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -50px;
-    right: -50px;
-    height: 1px;
-    background-color: #ccc;
+    background-color: transparent; /* Убран фон */
 }
 
 .social-signin {
@@ -155,12 +147,12 @@ nav ul li a {
 }
 
 .google-btn {
-    background-color: #b8b8b8;
+    background-color: #c9c9c9;
     color: #fff;
 }
 
 .apple-btn {
-    background-color: #b8b8b8;
+    background-color: #c9c9c9;
     color: #fff;
 }
 
