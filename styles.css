@@ -44,11 +44,8 @@ nav ul li a {
     color: #666;
     font-size: 0.9rem;
 }
+
 /* Main Content */
-
-
-
-
 .container1 {
     max-width: 1200px;
     width: 100%;
@@ -60,6 +57,8 @@ nav ul li a {
 .login-container {
     display: flex;
     gap: 20px;
+    align-items: flex-start; /* Убираем растяжение по высоте */
+    align-items: stretch;
 }
 
 .login-form {
@@ -68,16 +67,19 @@ nav ul li a {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Меньше вертикальных отступов между элементами */
 }
 
 .login-form h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Меньше отступа под заголовком */
 }
 
 .login-form p {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Меньше отступа под описанием */
 }
 
 .login-form label {
@@ -89,7 +91,7 @@ nav ul li a {
 .login-form input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 8px; /* Меньше отступа после полей ввода */
     border: 1px solid #ddd;
     border-radius: 4px;
 }
@@ -100,19 +102,18 @@ nav ul li a {
     font-size: 0.9rem;
     color: #007bff;
     text-decoration: none;
-    margin-bottom: 5px; /* Добавлено для вертикального отступа */
+    margin-bottom: 10px;
 }
 
 .remember-me {
-    display: flex; /* Используем Flexbox */
-    align-items: center; /* Выравниваем по вертикали */
-    gap: 5px; /* Расстояние между галочкой и текстом */
-    font-size: 0.8rem; /* Уменьшаем размер шрифта */
-    margin-left: 0; /* Убираем отступ слева */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
 }
 
 .remember-me input[type="checkbox"] {
-    margin: 0; /* Убираем стандартные отступы */
+    margin: 0;
 }
 
 .login-btn {
@@ -124,24 +125,15 @@ nav ul li a {
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 10px; /* Добавлен отступ сверху */
+    margin-top: 8px; /* Меньше отступ сверху кнопки */
 }
 
-.or-separator {
-    text-align: center;
-    margin: 20px 0;
-}
 
-.or-separator span {
-    position: relative;
-    padding: 0 10px;
-    background-color: transparent; /* Убран фон */
-}
 
 .social-signin {
     display: flex;
     gap: 25px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .google-btn,
@@ -155,8 +147,9 @@ nav ul li a {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
+
 
 .google-btn {
     background-color: #c9c9c9;
@@ -171,14 +164,15 @@ nav ul li a {
 .signup-link {
     color: #007bff;
     text-decoration: none;
+    margin-top: 10px;
 }
 
-/* Background Image */
 .background-image img {
+    max-width: 1200px;
     width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
 }
 
 /* Footer */
