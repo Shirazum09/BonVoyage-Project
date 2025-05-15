@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.citypic {
+  position: relative; /* Makes .citypic the reference point for absolutely positioned children */
+  display: block; /* Shrinks the container to fit its content */
+  width: 100vw;
+}
+
+#koln {
+  width: 100vw; /* Fill the viewport width */
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.citypic .logo {
+  position: absolute; /* Positions .logo absolutely within .citypic */
+  top: 10px; /* Moves .logo 10px from the top of .citypic */
+  left: 10px; /* Moves .logo 10px from the left of .citypic */
+  z-index: 2; /* Ensures .logo appears above the main image */
+  width: auto;
+  display: block;
+}
+
+.citypic .logo img {
+  width: 60px; /* Sets the logo image width to 60px */
+  height: auto; /* Keeps the logo image aspect ratio */
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.city-label {
+  display: inline-block; /* Makes the label fit its content */
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  color: #222;
+  font-size: 2em;
+  background-color: white;
+  padding: 12px 32px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px 5px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+.cityinfo-map {
+  display: flex;
+  flex-direction: row;
+  gap: 40px; /* Space between left and right parts */
+  padding: 5px; /* Inner padding */
+  justify-content: center; /* Center the content */
+}
+
+.left-part {
+  flex: 3;
+  max-width: 700px; /* Prevents text from being too wide */
+  min-width: 280px;
+  justify-content: left; /* Aligns text to the left */
+  text-align: left; /* Aligns text to the left */
+}
+
+.right-part {
+  margin-top: 100px;
+  min-width: 300px;
+}
+
+.description {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+.city-label-row {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between the label and weather logo */
+}
+
+.weather-logo img {
+  width: 180px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
